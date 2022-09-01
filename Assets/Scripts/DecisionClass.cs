@@ -8,6 +8,6 @@ public class DecisionClass : MonoBehaviour
     // our information
     public string decisionInfo;
     public string secondaryInfo;
-    public float moraleMod, virtueMod, moraleSecondaryMod, virtueSecondaryMod; // our primary and secondary morale and virtue mods
+    public float moraleMod, stabilityMod, moraleSecondaryMod, stabilitySecondaryMod; // our primary and secondary morale and virtue mods
 
 }

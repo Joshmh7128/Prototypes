@@ -13,18 +13,19 @@ public class DecisionManager : MonoBehaviour
     DecisionClass currentDecision; // the selected class
     int currentDecisionInt; // which one we are on
 
-    // our morale and virtue
-    float morale, virtue; // which of these will you choose?
+    // our morale and stability
+    float morale, stability; // which of these will you choose?
 
     // our ui
-    [SerializeField] Slider moraleSlider, virtueSlider; // our slider displays
-    [SerializeField] Text moraleDisplay, virtueDisplay; // our text display for our values
+    [SerializeField] Slider moraleSlider, stabilitySlider; // our slider displays
+    [SerializeField] Text moraleDisplay, stabilityDisplay; // our text display for our values
     [SerializeField] Text decisionInfo; // the current decision being displayed
     // our modifier functions
-    public void ChangeMorale(float amount)
+    public void ChangeStats()
     {
         // add this much to our morale
-        morale += amount;
+        morale += currentDecision.moraleMod;
+        stability += currentDecision.stabilityMod;
     }
 
     private void Start()
@@ -42,11 +43,11 @@ public class DecisionManager : MonoBehaviour
     // update our UI
     void ProcessUI()
     {
-        // setup our morale and virtue sliders to display our amounts properly
-        moraleSlider.value = morale + 5; // when morale is at 0 we want it to be in the center
-        virtueSlider.value = virtue + 5; // same with this
+        // setup our morale and stability sliders to display our amounts properly
+        moraleSlider.value = (morale + 5); // when morale is at 0 we want it to be in the center
+        stabilitySlider.value = (stability + 5); // same with this
         // text
-        moraleDisplay.text = "Morale: " + morale.ToString(); virtueDisplay.text = "Virtue: " + virtue.ToString(); // set the text
+        moraleDisplay.text = "Morale: " + morale.ToString(); stabilityDisplay.text = "stability: " + stability.ToString(); // set the text
 
         // setup the informational text
         decisionInfo.text = currentDecision.decisionInfo;
@@ -55,6 +56,24 @@ public class DecisionManager : MonoBehaviour
     void SetupDecision()
     {
         currentDecision = decisionQueue[0];
+    }
+
+    public void ClickSink()
+    {
+        AdvanceDecision();
+    }
+
+    public void ClickSwim()
+    {
+        AdvanceDecision();
+    }
+
+    void AdvanceDecision()
+    {
+        // before advancing, apply the modifiers of our current decision
+        ChangeStats(); // change our stats
+        currentDecisionInt++; // move to the next decision
+        currentDecision = decisionQueue[currentDecisionInt];
     }
 
 }
