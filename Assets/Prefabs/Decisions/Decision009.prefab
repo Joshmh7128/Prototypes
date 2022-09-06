@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c70e0fb3dd731b4ead2e9808bde7d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decisionInfo: where has the time gone?
+  decisionInfo: 
+  dayInfo: testing
   decisionMoraleMod: 0
   decisionStabilityMod: 0
   sinkInfo: Testing 00X

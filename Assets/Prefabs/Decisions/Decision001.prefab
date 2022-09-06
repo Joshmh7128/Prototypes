@@ -44,13 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c70e0fb3dd731b4ead2e9808bde7d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decisionInfo: This is a test decision. It is not meant to be informational or interesting.
-  decisionMoraleMod: 0
-  decisionStabilityMod: 0
-  sinkInfo: Testing 001
+  decisionInfo: 
+  dayInfo: This wealthy banker stole money from everyone.
+  decisionSinkMoraleMod: 1
+  decisionSinkStabilityMod: 0
+  decisionSwimMoraleMod: -1
+  decisionSwimStabilityMod: 0
+  sinkInfo: Because you let the banker live, they continued to steal money from everyone.
   swimInfo: Testing 002
   sinkMoralMod: 0
-  sinkStabilityMod: 0
-  swimMoralMod: 0
-  swimStabilityMod: 0
-  choice: 1
+  sinkStabilityMod: 1
+  swimMoralMod: -1
+  swimStabilityMod: -1
+  choice: 0

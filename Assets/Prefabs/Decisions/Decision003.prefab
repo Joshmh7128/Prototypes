@@ -44,13 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c70e0fb3dd731b4ead2e9808bde7d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decisionInfo: And a third, for good measure.
-  decisionMoraleMod: 0
-  decisionStabilityMod: 0
-  sinkInfo: Testing 005
-  swimInfo: Testing 006
-  sinkMoralMod: 0
-  sinkStabilityMod: 0
-  swimMoralMod: 0
-  swimStabilityMod: 0
-  choice: 1
+  decisionInfo: 
+  dayInfo: A group of Ferrymen refuse to travel to one side of Floterra out of sheer
+    ignorance.
+  decisionSinkMoraleMod: 1
+  decisionSinkStabilityMod: -1
+  decisionSwimMoraleMod: -1
+  decisionSwimStabilityMod: 1
+  sinkInfo: Because you sunk the Ferrymen, there was no one to drive the Ferries.
+    Floterra's infrastructure comes to a stand still.
+  swimInfo: Because you allowed the Ferrymen to live, they accepted that they must
+    make due, and are now running all ferry routes. However, not everyone there is
+    a fan of them.
+  sinkMoralMod: -1
+  sinkStabilityMod: -1
+  swimMoralMod: -1
+  swimStabilityMod: 1
+  choice: 0
