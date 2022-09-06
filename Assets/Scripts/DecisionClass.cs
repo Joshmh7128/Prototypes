@@ -5,9 +5,17 @@ using UnityEngine.UI;
 
 public class DecisionClass : MonoBehaviour
 {
-    // our information
+
+    // our information for decision making
     public string decisionInfo;
-    public string secondaryInfo;
-    public float moraleMod, stabilityMod, moraleSecondaryMod, stabilitySecondaryMod; // our primary and secondary morale and virtue mods
+    public float decisionMoraleMod, decisionStabilityMod; // our primary morale and stability mods
+    // afternoon
+    public string sinkInfo, swimInfo;
+    public float sinkMoralMod, sinkStabilityMod; // for our afternoon, our moral and stability modifications
+    public float swimMoralMod, swimStabilityMod; // for our afternoon, our moral and stability mods
+    // for the afternoon phase did we choose to sink or swim this decision?
+    public enum Choices { undetermined, sink, swim }
+    public Choices choice;
+
 
 }
