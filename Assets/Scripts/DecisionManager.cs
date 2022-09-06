@@ -15,7 +15,6 @@ public class DecisionManager : MonoBehaviour
     DecisionClass currentDecision; // the selected class
     int currentDecisionInt; // which one we are on
 
-
     // our morale and stability
     float morale, stability; // which of these will you choose?
 
@@ -23,6 +22,15 @@ public class DecisionManager : MonoBehaviour
     [SerializeField] Slider moraleSlider, stabilitySlider; // our slider displays
     [SerializeField] Text moraleDisplay, stabilityDisplay; // our text display for our values
     [SerializeField] Text decisionInfo; // the current decision being displayed
+
+    // setup our instance
+    public static DecisionManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
     // our modifier functions
     public void ChangeStats()
     {
@@ -33,6 +41,9 @@ public class DecisionManager : MonoBehaviour
 
     private void Start()
     {
+        // make sure we do not destroy on load
+        DontDestroyOnLoad(gameObject);
+
         // setup our first decision
         SetupDecision();
     }

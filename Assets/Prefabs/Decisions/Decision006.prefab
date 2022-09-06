@@ -45,8 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decisionInfo: wow this is a nightmare
-  secondaryInfo: 
-  moraleMod: 2
-  virtueMod: 2
-  moraleSecondaryMod: 1
-  virtueSecondaryMod: 1
+  decisionMoraleMod: 0
+  decisionStabilityMod: 0
+  sinkInfo: Testing 00X
+  swimInfo: Testing 00Y
+  sinkMoralMod: 0
+  sinkStabilityMod: 0
+  swimMoralMod: 0
+  swimStabilityMod: 0
+  choice: 0

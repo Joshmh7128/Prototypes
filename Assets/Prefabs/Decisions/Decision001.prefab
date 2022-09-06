@@ -45,8 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decisionInfo: This is a test decision. It is not meant to be informational or interesting.
-  secondaryInfo: 
-  moraleMod: -1
-  virtueMod: -1
-  moraleSecondaryMod: -1
-  virtueSecondaryMod: -1
+  decisionMoraleMod: 0
+  decisionStabilityMod: 0
+  sinkInfo: Testing 001
+  swimInfo: Testing 002
+  sinkMoralMod: 0
+  sinkStabilityMod: 0
+  swimMoralMod: 0
+  swimStabilityMod: 0
+  choice: 1

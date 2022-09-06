@@ -45,8 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decisionInfo: where has the time gone?
-  secondaryInfo: 
-  moraleMod: -1
-  virtueMod: -2
-  moraleSecondaryMod: 2
-  virtueSecondaryMod: -2
+  decisionMoraleMod: 0
+  decisionStabilityMod: 0
+  sinkInfo: Testing 00X
+  swimInfo: Testing 00Y
+  sinkMoralMod: 0
+  sinkStabilityMod: 0
+  swimMoralMod: 0
+  swimStabilityMod: 0
+  choice: 0

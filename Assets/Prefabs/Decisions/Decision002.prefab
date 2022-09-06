@@ -45,8 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decisionInfo: Here's another decision. I hope you feel good about yourself.
-  secondaryInfo: 
-  moraleMod: 2
-  virtueMod: 2
-  moraleSecondaryMod: 1
-  virtueSecondaryMod: 1
+  decisionMoraleMod: 0
+  decisionStabilityMod: 0
+  sinkInfo: Testing 003
+  swimInfo: Testing 004
+  sinkMoralMod: 0
+  sinkStabilityMod: 0
+  swimMoralMod: 0
+  swimStabilityMod: 0
+  choice: 2
